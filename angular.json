@@ -123,10 +123,6 @@
           }
         }
       }
-    }
-  },
-  "defaultProject": "social-media-dashboard",
-  "cli": {
-    "analytics": false
-  }
+    }},
+  "defaultProject": "social-media-dashboard"
 }
