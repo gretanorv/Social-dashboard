@@ -1,5 +1,25 @@
 @import '../shared/variables.scss';
 
+.dashboard-wrapper {
+    width: 100%;
+}
+
+.dashboard-info {
+    &-container {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    &__titles {
+        margin-right: 550px;
+
+        &-main {
+            font-size: 30px;
+        }
+    }
+}
+
 .dashboard-top-container {
     @include flex-center();
 }
