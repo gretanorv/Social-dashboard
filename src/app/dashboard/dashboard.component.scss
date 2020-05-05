@@ -1,7 +1,19 @@
-@import '../shared/variables.scss';
+@import "../shared/variables.scss";
 
 .dashboard-wrapper {
+    position: relative;
     width: 100%;
+
+    &::before {
+        background-color: $background-very-light-grey;
+        content: "";
+        height: 200px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        width: 100%;
+    }
 }
 
 .dashboard-info {
@@ -12,10 +24,32 @@
     }
 
     &__titles {
-        margin-right: 550px;
+        margin-right: 570px;
 
         &-main {
-            font-size: 30px;
+            font-size: 26px;
+            font-weight: 800;
+        }
+
+        &-info {
+            color: $dark-grey;
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            margin-top: -15px;
+            margin-bottom: 40px;
+        }
+    }
+
+    &__control {
+        align-items: center;
+        display: flex;
+
+        &-title {
+            color: $light-grey;
+            font-size: 12px;
+            font-weight: 800;
+            margin-right: 10px;
         }
     }
 }
