@@ -1,0 +1,27 @@
+@mixin flex-center() {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+@mixin card-border($border-color) {
+    background: $border-color;
+    border-radius: 4px;
+    bottom: 4px;
+    content: "";
+    position: absolute;
+    height: 180px;
+    left: 0;
+    z-index: -1;
+    width: 220px;
+}
+
+$background-color: #F0F3FA;
+$facebook-color: #288BE3;
+$twitter-color: #2E9BE1;
+$insta-color: linear-gradient(90deg, rgba(246,192,122,1) 20%, rgba(239,144,122,1) 43%, rgba(206,80,147,1) 100%);
+$youtube-color: #AD0E2F;
+$dark-grey: #6D707F;
+$light-grey: #828491;
+$green-progress: #47AC92;
+$red-progress: #C66572;
