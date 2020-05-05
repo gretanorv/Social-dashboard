@@ -1,14 +1,14 @@
-<div class="dashboard-card-container dashboard-card-container{{ colorClass }}">
-    <div class="dashboard-card-social-network">
-        <img class="dashboard-card-social-network-icon" src="{{ iconLink }}" alt="">
-        <p class="dashboard-card-social-network-username">{{ username }}</p>
+<div class="dashboard-card-container dashboard-card-container--{{ colorClass }}">
+    <div class="dashboard-card__social-network">
+        <img class="dashboard-card__social-network-icon" src="{{ iconLink }}" alt="">
+        <p class="dashboard-card__social-network-username">{{ username }}</p>
     </div>
-    <div class="dashoard-card-followers">
-        <p class="dashboard-card-followers-number">{{ followersNumber }}</p>
-        <p class="dashboard-card-followers-title">FOLLOWERS</p>
+    <div class="dashoard-card__followers">
+        <p class="dashboard-card__followers-number">{{ followersNumber }}</p>
+        <p class="dashboard-card__followers-title">FOLLOWERS</p>
     </div>
-    <div class="dashboard-card-status">
-        <img class="dashboard-card-status-icon" src="{{ statusIconLink }}" alt="">
-        <p class="dashboard-card-status-title">{{ progressIcon }} {{ numberOfFolowers }} Today</p>
+    <div class="dashboard-card__status">
+        <img class="dashboard-card__status-icon" src="{{ statusIconLink }}" alt="">
+        <p class="dashboard-card__status-title dashboard-card__status-title--{{ statusColor }}">{{ followersNumberToday }} Today</p>
     </div>
 </div>

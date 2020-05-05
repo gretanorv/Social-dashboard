@@ -16,11 +16,11 @@ export class DashboardCardBigComponent implements OnInit {
   @Input()
   followersNumber: string;
   @Input()
-  numberOfFolowers: string;
-  @Input()
-  progressIcon: string;
+  followersNumberToday: string;
   @Input()
   statusIconLink: string;
+  @Input()
+  statusColor: string;
 
   constructor() { }
 

@@ -1,0 +1,5 @@
+@import '../shared/variables.scss';
+
+.dashboard-top-container {
+    @include flex-center();
+}
