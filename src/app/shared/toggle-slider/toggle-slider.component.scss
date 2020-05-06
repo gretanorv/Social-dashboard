@@ -1,54 +1,53 @@
-@import '../../shared/variables.scss';
+@import "../../shared/variables.scss";
 
 .toggle-switch {
-    position: relative;
-    display: inline-block;
-    width: 45px;
-    height: 22.5px;
+  display: inline-block;
+  height: 22.5px;
+  position: relative;
+  width: 45px;
 
-    &__checkbox {
-        opacity: 0;
-        width: 0;
-        height: 0;
+  &__checkbox {
+    height: 0;
+    opacity: 0;
+    width: 0;
+  }
+
+  &__slider {
+    background: $slider-background;
+    background-color: #2196f3;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+
+    &--round {
+      border-radius: 22px;
+
+      &::before {
+        border-radius: 50%;
+      }
     }
 
-    &__slider {
-        background-color: #2196F3;
-        position: absolute;
-        cursor: pointer;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: $slider-background;
-        -webkit-transition: .4s;
-        transition: .4s;
-
-        &--round {
-            border-radius: 22px;
-
-            &::before {
-                border-radius: 50%;
-            }
-        }
-
-        &::before {
-            position: absolute;
-            content: "";
-            height: 16px;
-            width: 16px;
-            left: 2px;
-            bottom: 3px;
-            background-color: white;
-            -webkit-transition: .4s;
-            transition: .4s;
-        }
+    &::before {
+      background-color: white;
+      bottom: 3px;
+      content: "";
+      height: 16px;
+      left: 2px;
+      position: absolute;
+      -webkit-transition: 0.4s;
+      transition: 0.4s;
+      width: 16px;
     }
+  }
+}
 
-  }
-  
-  .toggle-switch__checkbox:checked + .toggle-switch__slider:before {
-    -webkit-transform: translateX(23px);
-    -ms-transform: translateX(23px);
-    transform: translateX(23px);
-  }
+.toggle-switch__checkbox:checked + .toggle-switch__slider::before {
+  -webkit-transform: translateX(23px);
+  -ms-transform: translateX(23px);
+  transform: translateX(23px);
+}
