@@ -16,6 +16,11 @@
   z-index: -1;
 }
 
+@mixin wrapper-margin-width() {
+  margin: 0 auto;
+  max-width: $wrapper-width;
+}
+
 $background-very-light-grey: #f8f9fe;
 $background-light-grey: #f0f3fa;
 $background-dark-grey: #e1e3f0;
@@ -40,3 +45,5 @@ $slider-background: linear-gradient(
 $card-width: 220px;
 $montserrat: "Montserrat", sans-serif;
 $martel: "Martel Sans", sans-serif;
+$page-width: auto;
+$wrapper-width: 1000px;

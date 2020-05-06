@@ -7,6 +7,7 @@ import { DashboardCardBigComponent } from './dashboard-card-big/dashboard-card-b
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ToggleSliderComponent } from './shared/toggle-slider/toggle-slider.component';
 import { DashboardCardSmallComponent } from './dashboard-card-small/dashboard-card-small.component';
+import { DashboardTodayProgressComponent } from './dashboard-today-progress/dashboard-today-progress.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { DashboardCardSmallComponent } from './dashboard-card-small/dashboard-ca
     DashboardCardBigComponent,
     DashboardComponent,
     ToggleSliderComponent,
-    DashboardCardSmallComponent
+    DashboardCardSmallComponent,
+    DashboardTodayProgressComponent
   ],
   imports: [
     BrowserModule,
