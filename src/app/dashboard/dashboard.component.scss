@@ -1,59 +1,59 @@
 @import "../shared/variables.scss";
 
 .dashboard-wrapper {
-    position: relative;
-    width: 100%;
+  position: relative;
+  width: 100%;
 
-    &::before {
-        background-color: $background-very-light-grey;
-        content: "";
-        height: 200px;
-        position: absolute;
-        left: 0;
-        top: 0;
-        z-index: -1;
-        width: 100%;
-    }
+  &::before {
+    background-color: $background-very-light-grey;
+    content: "";
+    height: 200px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+  }
 }
 
 .dashboard-info {
-    &-container {
-        display: flex;
-        justify-content: center;
-        margin: 0 auto;
+  &-container {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  &__titles {
+    margin-right: 570px;
+
+    &-main {
+      font-size: 26px;
+      font-weight: 800;
     }
 
-    &__titles {
-        margin-right: 570px;
-
-        &-main {
-            font-size: 26px;
-            font-weight: 800;
-        }
-
-        &-info {
-            color: $dark-grey;
-            font-size: 12px;
-            font-weight: 800;
-            letter-spacing: 1px;
-            margin-top: -15px;
-            margin-bottom: 40px;
-        }
+    &-info {
+      color: $dark-grey;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      margin-bottom: 40px;
+      margin-top: -15px;
     }
+  }
 
-    &__control {
-        align-items: center;
-        display: flex;
+  &__control {
+    align-items: center;
+    display: flex;
 
-        &-title {
-            color: $light-grey;
-            font-size: 12px;
-            font-weight: 800;
-            margin-right: 10px;
-        }
+    &-title {
+      color: $light-grey;
+      font-size: 12px;
+      font-weight: 800;
+      margin-right: 10px;
     }
+  }
 }
 
 .dashboard-top-container {
-    @include flex-center();
+  @include flex-center();
 }
