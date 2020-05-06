@@ -1,0 +1,61 @@
+@import "../shared/variables.scss";
+
+.small-card {
+  &-container {
+    background-color: $background-light-grey;
+    border-radius: 4px;
+    font-family: $montserrat;
+    height: 110px;
+    width: $card-width;
+
+    &:hover {
+      background-color: $background-dark-grey;
+      cursor: pointer;
+    }
+
+    &:focus {
+      background-color: $background-dark-grey;
+    }
+  }
+
+  &__top {
+    align-items: center;
+    display: flex;
+
+    &-title {
+      color: $dark-grey;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      line-height: 1;
+      margin: 25px 20px;
+    }
+
+    &-icon {
+      margin-left: auto;
+      margin-right: 25px;
+      width: 18px;
+    }
+  }
+
+  &__bottom {
+    align-items: center;
+    display: flex;
+    margin-left: 20px;
+    margin-top: -15px;
+
+    &-number {
+      font-family: $martel;
+      font-size: 27px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      line-height: 0;
+    }
+
+    &-status {
+      font-size: 11px;
+      margin-left: auto;
+      margin-right: 25px;
+    }
+  }
+}

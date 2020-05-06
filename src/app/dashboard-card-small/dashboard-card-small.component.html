@@ -1,0 +1,15 @@
+<div class="small-card-container">
+  <div class="small-card__top">
+    <p class="small-card__top-title">{{ cardTitle }}</p>
+    <img src="{{ iconLink }}" alt="" class="small-card__top-icon" />
+  </div>
+  <div class="small-card__bottom">
+    <p class="small-card__bottom-number">{{ followersNumber }}</p>
+    <div class="small-card__bottom-status card__status">
+      <img src="{{ statusIconLink }}" alt="" class="card__status-icon" />
+      <p class="card__status-title card__status-title--{{ statusColor }}">
+        {{ followersPercentage }}%
+      </p>
+    </div>
+  </div>
+</div>
