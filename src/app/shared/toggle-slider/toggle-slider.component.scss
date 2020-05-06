@@ -1,64 +1,53 @@
+@import "../../shared/variables.scss";
+
 .toggle-switch {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
+  display: inline-block;
+  height: 22.5px;
+  position: relative;
+  width: 45px;
 
-    &__checkbox {
-        opacity: 0;
-        width: 0;
-        height: 0;
+  &__checkbox {
+    height: 0;
+    opacity: 0;
+    width: 0;
+  }
 
-        &:checked {
-            background-color: #2196F3;
-        }
+  &__slider {
+    background: $slider-background;
+    background-color: #2196f3;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+
+    &--round {
+      border-radius: 22px;
+
+      &::before {
+        border-radius: 50%;
+      }
     }
 
-    &__slider {
-        background-color: #2196F3;
-        position: absolute;
-        cursor: pointer;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: #ccc;
-        -webkit-transition: .4s;
-        transition: .4s;
-
-        &--round {
-            border-radius: 34px;
-
-            &::before {
-                border-radius: 50%;
-            }
-        }
-
-        &::before {
-            position: absolute;
-            content: "";
-            height: 26px;
-            width: 26px;
-            left: 4px;
-            bottom: 4px;
-            background-color: white;
-            -webkit-transition: .4s;
-            transition: .4s;
-        }
+    &::before {
+      background-color: white;
+      bottom: 3px;
+      content: "";
+      height: 16px;
+      left: 2px;
+      position: absolute;
+      -webkit-transition: 0.4s;
+      transition: 0.4s;
+      width: 16px;
     }
+  }
+}
 
-  }
-  
-  .toggle-switch__checkbox:checked + .toggle-switch__slider {
-    background-color: #2196F3;
-  }
-  
-  .toggle-switch__checkbox:focus + .toggle-switch__slider {
-    box-shadow: 0 0 1px #2196F3;
-  }
-  
-  .toggle-switch__checkbox:checked + .toggle-switch__slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
-  }
+.toggle-switch__checkbox:checked + .toggle-switch__slider::before {
+  -webkit-transform: translateX(23px);
+  -ms-transform: translateX(23px);
+  transform: translateX(23px);
+}
