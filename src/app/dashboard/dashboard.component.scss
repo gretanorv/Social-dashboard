@@ -1,6 +1,7 @@
 @import "../shared/variables.scss";
 
 .dashboard-wrapper {
+  max-width: $page-width;
   position: relative;
   width: 100%;
 
@@ -19,12 +20,15 @@
 .dashboard-info {
   &-container {
     display: flex;
+    flex-shrink: 1;
     justify-content: center;
     margin: 0 auto;
+    max-width: $wrapper-width;
+    padding-top: 40px;
   }
 
   &__titles {
-    margin-right: 570px;
+    margin-left: 12px;
 
     &-main {
       font-size: 26px;
@@ -35,8 +39,8 @@
       color: $dark-grey;
       font-size: 12px;
       font-weight: 800;
-      letter-spacing: 1px;
-      margin-bottom: 40px;
+      letter-spacing: 0.5px;
+      margin-bottom: 30px;
       margin-top: -15px;
     }
   }
@@ -44,6 +48,8 @@
   &__control {
     align-items: center;
     display: flex;
+    margin-left: auto;
+    margin-right: 10px;
 
     &-title {
       color: $light-grey;
@@ -56,4 +62,30 @@
 
 .dashboard-top-container {
   @include flex-center();
+  @include wrapper-margin-width();
+
+  flex-wrap: wrap;
+}
+
+.dashboard-main {
+  &-container {
+    @include wrapper-margin-width();
+  }
+
+  &__title {
+    color: $dark-grey;
+    font-family: $montserrat;
+    font-size: 20px;
+    margin-bottom: 0;
+    margin-left: 15px;
+    padding-top: 20px;
+  }
+}
+
+.dashboard-today-container {
+  @include flex-center();
+  @include wrapper-margin-width();
+
+  flex-direction: row;
+  flex-wrap: wrap;
 }
