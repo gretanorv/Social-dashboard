@@ -8,6 +8,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ToggleSliderComponent } from './shared/toggle-slider/toggle-slider.component';
 import { DashboardCardSmallComponent } from './dashboard-card-small/dashboard-card-small.component';
 import { DashboardTodayProgressComponent } from './dashboard-today-progress/dashboard-today-progress.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,13 +17,10 @@ import { DashboardTodayProgressComponent } from './dashboard-today-progress/dash
     DashboardComponent,
     ToggleSliderComponent,
     DashboardCardSmallComponent,
-    DashboardTodayProgressComponent
+    DashboardTodayProgressComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
