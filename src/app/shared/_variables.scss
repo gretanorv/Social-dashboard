@@ -24,6 +24,8 @@
 $background-very-light-grey: #f8f9fe;
 $background-light-grey: #f0f3fa;
 $background-dark-grey: #e1e3f0;
+$background-blue: #20222f;
+$background-dark-blue: #1d2029;
 $facebook-color: #288be3;
 $twitter-color: #2e9be1;
 $insta-color: linear-gradient(
@@ -35,9 +37,17 @@ $insta-color: linear-gradient(
 $youtube-color: #ad0e2f;
 $dark-grey: #6d707f;
 $light-grey: #828491;
+$grey-blue: #6e7a9a;
+$white: #fff;
+$blue: #252b43;
+$lighter-blue: #333a56;
 $green-progress: #47ac92;
 $red-progress: #ba4e5d;
-$slider-background: linear-gradient(90deg, rgba(58, 152, 218, 1) 0%, rgba(77, 196, 146, 1) 100%);
+$slider-background: linear-gradient(
+  90deg,
+  rgba(58, 152, 218, 1) 0%,
+  rgba(77, 196, 146, 1) 100%
+);
 $card-width: 220px;
 $montserrat: "Montserrat", sans-serif;
 $martel: "Martel Sans", sans-serif;
