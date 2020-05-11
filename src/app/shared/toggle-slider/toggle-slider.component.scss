@@ -51,3 +51,9 @@
   -ms-transform: translateX(23px);
   transform: translateX(23px);
 }
+
+.theme--dark {
+  &::before {
+    background-color: $background-dark-blue;
+  }
+}

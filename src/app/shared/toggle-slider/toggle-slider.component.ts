@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, ElementRef } from '@angular/core';
 import { ThemeService } from './services/theme.service';
 
 @Component({
@@ -8,9 +8,17 @@ import { ThemeService } from './services/theme.service';
 })
 export class ToggleSliderComponent implements OnInit {
   isChecked: boolean;
-  constructor(private theme: ThemeService) {}
+  isDarkTheme: boolean;
+  constructor(private theme: ThemeService, private el: ElementRef) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.theme.currentTheme.subscribe(
+      (theme) => (
+        (this.isDarkTheme = theme),
+        this.theme.getTheme(this.el.nativeElement.querySelector('span'))
+      )
+    );
+  }
 
   checkValue(event: any) {
     this.theme.changeTheme(event);
