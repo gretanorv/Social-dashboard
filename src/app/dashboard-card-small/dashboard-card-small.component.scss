@@ -60,3 +60,15 @@
     }
   }
 }
+
+.theme--dark {
+  & .small-card {
+    &__top-title {
+      color: $light-blue-text;
+    }
+
+    &__bottom-number {
+      color: $white;
+    }
+  }
+}
