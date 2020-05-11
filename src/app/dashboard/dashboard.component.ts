@@ -8,25 +8,14 @@ import { ThemeService } from '../shared/toggle-slider/services/theme.service';
 })
 export class DashboardComponent implements OnInit {
   isDarkTheme: boolean;
-  constructor(
-    private theme: ThemeService,
-    private renderer: Renderer2,
-    private el: ElementRef
-  ) {}
+  constructor(private theme: ThemeService, private el: ElementRef) {}
 
   ngOnInit() {
     this.theme.currentTheme.subscribe(
-      (theme) => ((this.isDarkTheme = theme), this.toggleTheme())
+      (theme) => (
+        (this.isDarkTheme = theme),
+        this.theme.getTheme(this.el.nativeElement.querySelector('div'))
+      )
     );
-  }
-
-  toggleTheme(): void {
-    const myTag = this.el.nativeElement.querySelector('div');
-
-    if (this.isDarkTheme) {
-      myTag.classList.add('theme--dark');
-    } else {
-      myTag.classList.remove('theme--dark');
-    }
   }
 }
