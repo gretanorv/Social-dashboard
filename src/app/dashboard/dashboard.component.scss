@@ -1,6 +1,7 @@
-@import "../shared/variables.scss";
+@import "../shared/_variables.scss";
 
 .dashboard-wrapper {
+  height: 100vh;
   max-width: $page-width;
   position: relative;
   width: 100%;
@@ -29,6 +30,7 @@
 
   &__titles {
     margin-left: 12px;
+    z-index: 1;
 
     &-main {
       font-size: 26px;
@@ -50,6 +52,7 @@
     display: flex;
     margin-left: auto;
     margin-right: 10px;
+    z-index: 1;
 
     &-title {
       color: $light-grey;
@@ -88,4 +91,23 @@
 
   flex-direction: row;
   flex-wrap: wrap;
+}
+
+.theme--dark {
+  &.dashboard-wrapper {
+    background-color: $background-dark-blue;
+    z-index: 0;
+
+    &::before {
+      background-color: $backgdround-lighter-blue;
+    }
+  }
+
+  h1 {
+    color: $white;
+  }
+
+  p {
+    color: $light-blue-text;
+  }
 }

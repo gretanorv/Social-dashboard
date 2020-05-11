@@ -1,4 +1,4 @@
-@import "../../shared/variables.scss";
+@import "../../shared/_variables.scss";
 
 .toggle-switch {
   display: inline-block;
@@ -33,7 +33,7 @@
     }
 
     &::before {
-      background-color: white;
+      background-color: $white;
       bottom: 3px;
       content: "";
       height: 16px;
@@ -50,4 +50,10 @@
   -webkit-transform: translateX(23px);
   -ms-transform: translateX(23px);
   transform: translateX(23px);
+}
+
+.theme--dark {
+  &::before {
+    background-color: $background-dark-blue;
+  }
 }

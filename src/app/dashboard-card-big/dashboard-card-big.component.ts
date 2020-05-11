@@ -1,12 +1,12 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ElementRef } from '@angular/core';
+import { ThemeService } from '../shared/toggle-slider/services/theme.service';
 
 @Component({
   selector: 'app-dashboard-card-big',
   templateUrl: './dashboard-card-big.component.html',
-  styleUrls: ['./dashboard-card-big.component.scss']
+  styleUrls: ['./dashboard-card-big.component.scss'],
 })
 export class DashboardCardBigComponent implements OnInit {
-
   @Input()
   colorClass: string;
   @Input()
@@ -21,10 +21,16 @@ export class DashboardCardBigComponent implements OnInit {
   statusIconLink: string;
   @Input()
   statusColor: string;
+  isDarkTheme: boolean;
 
-  constructor() { }
+  constructor(private theme: ThemeService, private el: ElementRef) {}
 
   ngOnInit(): void {
+    this.theme.currentTheme.subscribe(
+      (theme) => (
+        (this.isDarkTheme = theme),
+        this.theme.getTheme(this.el.nativeElement.querySelector('div'))
+      )
+    );
   }
-
 }
