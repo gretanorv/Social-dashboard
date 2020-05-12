@@ -1,0 +1,118 @@
+{
+  "bigCards": [
+    {
+      "id": 1,
+      "colorClass": "facebook",
+      "iconLink": "../../assets/images/icon-facebook.svg",
+      "username": "@nathanf",
+      "followersNumber": "1987",
+      "followersNumberToday": "12",
+      "statusIconLink": "../../assets/images/icon-up.svg",
+      "statusColor": "green"
+    },
+    {
+      "id": 2,
+      "colorClass": "twitter",
+      "iconLink": "../../assets/images/icon-twitter.svg",
+      "username": "@nathanf",
+      "followersNumber": "1044",
+      "followersNumberToday": "99",
+      "statusIconLink": "../../assets/images/icon-up.svg",
+      "statusColor": "green"
+    },
+    {
+      "id": 3,
+      "colorClass": "insta",
+      "iconLink": "../../assets/images/icon-instagram.svg",
+      "username": "@realnathanf",
+      "followersNumber": "11k",
+      "followersNumberToday": "1099",
+      "statusIconLink": "../../assets/images/icon-up.svg",
+      "statusColor": "green"
+    },
+    {
+      "id": 4,
+      "colorClass": "youtube",
+      "iconLink": "../../assets/images/icon-youtube.svg",
+      "username": "Nathan F.",
+      "followersNumber": "8239",
+      "followersNumberToday": "12",
+      "statusIconLink": "../../assets/images/icon-down.svg",
+      "statusColor": "red"
+    }
+  ],
+  "smallCards": [
+    {
+      "id": 1,
+      "cardTitle": "Page Views",
+      "iconLink": "../../assets/images/icon-facebook.svg",
+      "followersNumber": "87",
+      "statusIconLink": "../../assets/images/icon-up.svg",
+      "statusColor": "green",
+      "followersPercentage": "3"
+    },
+    {
+      "id": 2,
+      "cardTitle": "Likes",
+      "iconLink": "../../assets/images/icon-facebook.svg",
+      "followersNumber": "52",
+      "statusIconLink": "../../assets/images/icon-down.svg",
+      "statusColor": "red",
+      "followersPercentage": "2"
+    },
+    {
+      "id": 3,
+      "cardTitle": "Likes",
+      "iconLink": "../../assets/images/icon-instagram.svg",
+      "followersNumber": "5462",
+      "statusIconLink": "../../assets/images/icon-up.svg",
+      "statusColor": "green",
+      "followersPercentage": "2257"
+    },
+    {
+      "id": 4,
+      "cardTitle": "Profile views",
+      "iconLink": "../../assets/images/icon-instagram.svg",
+      "followersNumber": "52k",
+      "statusIconLink": "../../assets/images/icon-up.svg",
+      "statusColor": "green",
+      "followersPercentage": "1375"
+    },
+    {
+      "id": 5,
+      "cardTitle": "Retweets",
+      "iconLink": "../../assets/images/icon-twitter.svg",
+      "followersNumber": "117",
+      "statusIconLink": "../../assets/images/icon-up.svg",
+      "statusColor": "green",
+      "followersPercentage": "303"
+    },
+    {
+      "id": 6,
+      "cardTitle": "Likes",
+      "iconLink": "../../assets/images/icon-twitter.svg",
+      "followersNumber": "507",
+      "statusIconLink": "../../assets/images/icon-up.svg",
+      "statusColor": "green",
+      "followersPercentage": "553"
+    },
+    {
+      "id": 7,
+      "cardTitle": "Likes",
+      "iconLink": "../../assets/images/icon-youtube.svg",
+      "followersNumber": "107",
+      "statusIconLink": "../../assets/images/icon-down.svg",
+      "statusColor": "red",
+      "followersPercentage": "19"
+    },
+    {
+      "id": 8,
+      "cardTitle": "Total Views",
+      "iconLink": "../../assets/images/icon-youtube.svg",
+      "followersNumber": "1407",
+      "statusIconLink": "../../assets/images/icon-down.svg",
+      "statusColor": "red",
+      "followersPercentage": "12"
+    }
+  ]
+}

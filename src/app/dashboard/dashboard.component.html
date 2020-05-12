@@ -17,48 +17,15 @@
 
   <div class="dashboard-top-container">
     <app-dashboard-card-big
-      colorClass="facebook"
-      iconLink="../../assets/images/icon-facebook.svg"
-      username="@nathanf"
-      followersNumber="1987"
-      followersNumberToday="12"
-      statusIconLink="../../assets/images/icon-up.svg"
-      statusColor="green"
-    >
-    </app-dashboard-card-big>
-
-    <app-dashboard-card-big
-      colorClass="twitter"
-      iconLink="../../assets/images/icon-twitter.svg"
-      username="@nathanf"
-      followersNumber="1044"
-      followersNumberToday="99"
-      statusIconLink="../../assets/images/icon-up.svg"
-      statusColor="green"
-    >
-    </app-dashboard-card-big>
-
-    <app-dashboard-card-big
-      colorClass="insta"
-      iconLink="../../assets/images/icon-instagram.svg"
-      username="@realnathanf"
-      followersNumber="11k"
-      followersNumberToday="1099"
-      statusIconLink="../../assets/images/icon-up.svg"
-      statusColor="green"
-    >
-    </app-dashboard-card-big>
-
-    <app-dashboard-card-big
-      colorClass="youtube"
-      iconLink="../../assets/images/icon-youtube.svg"
-      username="Nathan F."
-      followersNumber="8239"
-      followersNumberToday="12"
-      statusIconLink="../../assets/images/icon-down.svg"
-      statusColor="red"
-    >
-    </app-dashboard-card-big>
+      *ngFor="let bigCardsdata of bigCardsdata"
+      colorClass="{{ bigCardsdata.colorClass }}"
+      iconLink="{{ bigCardsdata.iconLink }}"
+      username="{{ bigCardsdata.username }}"
+      followersNumber="{{ bigCardsdata.followersNumber }}"
+      followersNumberToday="{{ bigCardsdata.followersNumberToday }}"
+      statusIconLink="{{ bigCardsdata.statusIconLink }}"
+      statusColor="{{ bigCardsdata.statusColor }}"
+    ></app-dashboard-card-big>
   </div>
 
   <div class="dashboard-main-container">

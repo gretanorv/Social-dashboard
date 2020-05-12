@@ -44,13 +44,11 @@ $white: #fff;
 $light-blue-text: #707993;
 $green-progress: #47ac92;
 $red-progress: #ba4e5d;
-$slider-background: linear-gradient(
-  90deg,
-  rgba(58, 152, 218, 1) 0%,
-  rgba(77, 196, 146, 1) 100%
-);
+$slider-background: linear-gradient(90deg, rgba(58, 152, 218, 1) 0%, rgba(77, 196, 146, 1) 100%);
 $card-width: 220px;
 $montserrat: "Montserrat", sans-serif;
 $martel: "Martel Sans", sans-serif;
 $page-width: auto;
 $wrapper-width: 1000px;
+
+$breakpoint-mobile: 480px;
