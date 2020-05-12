@@ -1,79 +1,9 @@
 <app-dashboard-card-small
-  cardTitle="Page Views"
-  iconLink="../../assets/images/icon-facebook.svg"
-  followersNumber="87"
-  statusIconLink="../../assets/images/icon-up.svg"
-  statusColor="green"
-  followersPercentage="3"
->
-</app-dashboard-card-small>
-
-<app-dashboard-card-small
-  cardTitle="Likes"
-  iconLink="../../assets/images/icon-facebook.svg"
-  followersNumber="52"
-  statusIconLink="../../assets/images/icon-down.svg"
-  statusColor="red"
-  followersPercentage="2"
->
-</app-dashboard-card-small>
-
-<app-dashboard-card-small
-  cardTitle="Likes"
-  iconLink="../../assets/images/icon-instagram.svg"
-  followersNumber="5462"
-  statusIconLink="../../assets/images/icon-up.svg"
-  statusColor="green"
-  followersPercentage="2257"
->
-</app-dashboard-card-small>
-
-<app-dashboard-card-small
-  cardTitle="Profile views"
-  iconLink="../../assets/images/icon-instagram.svg"
-  followersNumber="52k"
-  statusIconLink="../../assets/images/icon-up.svg"
-  statusColor="green"
-  followersPercentage="1375"
->
-</app-dashboard-card-small>
-
-<app-dashboard-card-small
-  cardTitle="Retweets"
-  iconLink="../../assets/images/icon-twitter.svg"
-  followersNumber="117"
-  statusIconLink="../../assets/images/icon-up.svg"
-  statusColor="green"
-  followersPercentage="303"
->
-</app-dashboard-card-small>
-
-<app-dashboard-card-small
-  cardTitle="Likes"
-  iconLink="../../assets/images/icon-twitter.svg"
-  followersNumber="507"
-  statusIconLink="../../assets/images/icon-up.svg"
-  statusColor="green"
-  followersPercentage="553"
->
-</app-dashboard-card-small>
-
-<app-dashboard-card-small
-  cardTitle="Likes"
-  iconLink="../../assets/images/icon-youtube.svg"
-  followersNumber="107"
-  statusIconLink="../../assets/images/icon-down.svg"
-  statusColor="red"
-  followersPercentage="19"
->
-</app-dashboard-card-small>
-
-<app-dashboard-card-small
-  cardTitle="Total Views"
-  iconLink="../../assets/images/icon-youtube.svg"
-  followersNumber="1407"
-  statusIconLink="../../assets/images/icon-down.svg"
-  statusColor="red"
-  followersPercentage="12"
->
-</app-dashboard-card-small>
+  *ngFor="let smallCardsdata of smallCardsdata"
+  cardTitle="{{ smallCardsdata.cardTitle }}"
+  iconLink="{{ smallCardsdata.iconLink }}"
+  followersNumber="{{ smallCardsdata.followersNumber }}"
+  statusIconLink="{{ smallCardsdata.statusIconLink }}"
+  statusColor="{{ smallCardsdata.statusColor }}"
+  followersPercentage="{{ smallCardsdata.followersPercentage }}"
+></app-dashboard-card-small>
