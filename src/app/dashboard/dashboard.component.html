@@ -5,7 +5,12 @@
       <p class="dashboard-info__titles-info">Total Followers: 23,004</p>
     </div>
     <div class="dashboard-info__control">
-      <p class="dashboard-info__control-title">Dark Mode</p>
+      <p *ngIf="isDarkTheme" class="dashboard-info__control-title">
+        Light Mode
+      </p>
+      <p *ngIf="!isDarkTheme" class="dashboard-info__control-title">
+        Dark Mode
+      </p>
       <app-toggle-slider></app-toggle-slider>
     </div>
   </div>
