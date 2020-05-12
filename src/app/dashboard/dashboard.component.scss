@@ -1,8 +1,8 @@
 @import "../shared/_variables.scss";
 
 .dashboard-wrapper {
-  height: 100vh;
   max-width: $page-width;
+  min-height: 100vh;
   position: relative;
   width: 100%;
 
@@ -107,7 +107,43 @@
     color: $white;
   }
 
+  h2 {
+    color: $white;
+  }
+
   p {
     color: $light-blue-text;
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .dashboard-info {
+    &-container {
+      flex-direction: column;
+      margin-bottom: 20px;
+      margin-left: 20px;
+      margin-right: 10px;
+    }
+
+    &__control {
+      justify-content: space-between;
+      margin-left: 15px;
+    }
+
+    &__titles {
+      &-main {
+        font-size: 22px;
+        margin-bottom: 20px;
+      }
+
+      &-info {
+        text-align: left;
+      }
+    }
+  }
+
+  .dashboard-main-container {
+    margin-bottom: 10px;
+    margin-left: 35px;
   }
 }
